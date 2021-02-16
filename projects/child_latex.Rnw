@@ -1,0 +1,21 @@
+% !Rnw root = thesis.Rnw
+% Child with Latex code only - Work as a subfiles:
+
+%---------------------------------------------------
+<<subfiles, echo=F, cache=F,>>=
+library(knitr)
+set_parent("thesis.Rnw")
+@
+%---------------------------------------------------
+
+
+%---------------------------------------------------
+<<content1, child="child_stats.Rnw">>=
+@
+%-------------------------------------------------
+
+\section{ Knitr child Documents}
+You should note that using knitr package you can easily incorporate difference kinds of files into a project.
+
+\tabRegresi
+\pieChartFig
